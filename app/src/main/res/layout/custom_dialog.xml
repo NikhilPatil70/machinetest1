@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/Text1"
+        android:layout_width="350dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="TextView1"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Text2"
+        android:layout_width="346dp"
+        android:layout_height="62dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/purple_200"
+        android:gravity="center"
+        android:text="TextView2"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Text1" />
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="28dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Text2">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+        <RadioButton
+            android:id="@+id/Radio1"
+            android:layout_width="75dp"
+            android:layout_height="85dp"
+            android:text="Upper"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp" />
+
+        <RadioButton
+            android:id="@+id/Radio2"
+            android:layout_width="75dp"
+            android:layout_height="85dp"
+            android:text="Lower"
+            android:textColor="@color/black"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/check"
+            android:layout_width="75dp"
+            android:layout_height="85dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="30dp" />
+
+        </RadioGroup>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
